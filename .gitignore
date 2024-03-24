@@ -43,6 +43,8 @@ next-env.d.ts
 # package
 /package.json
 package.json
+/package-lock.json
+package-lock.json
 
 # env
 /.env
