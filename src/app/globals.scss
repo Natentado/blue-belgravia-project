@@ -4,6 +4,11 @@
   margin: 0;
 }
 
+body{
+  width: 100vw;
+  width: 100dvw;
+}
+
 h1,
 h2,
 h3,
@@ -17,6 +22,7 @@ a,
 li,
 button {
   color: #2A2A2F;
+  line-height: 1.4;
 }
 
 ul, ol {
