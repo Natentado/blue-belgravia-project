@@ -1,8 +1,7 @@
 import { Poppins } from "next/font/google";
 import Script from "next/script";
-import "./globals.scss";
 import Header from "@/components/header";
-import { GoogleAnalytics } from '@next/third-parties/google'
+import "./globals.scss";
 
 const poppins = Poppins({ 
   subsets: ["latin"],
@@ -34,7 +33,6 @@ export default function RootLayout({
           }}
         />
         {/* <!-- End Google Tag Manager --> */}
-        {/* <GoogleAnalytics gaId={TAGMANAGER_ID} /> */}
       </head>
       <body className={poppins.className}>
         {/* <!-- Google Tag Manager (noscript) --> */}
