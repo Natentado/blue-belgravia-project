@@ -2,11 +2,11 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "BBH | Candidates",
+  title: "BBH | Clients",
   description: "The Blue Belgravia Hospitality company offers the greatest hospitality services in London.",
 };
 
-const CandidatesPage = () => {
+const ClientsPage = () => {
 
   return (
     <main>
@@ -23,10 +23,10 @@ const CandidatesPage = () => {
         Voltar para Home
       </Link>
       <section>
-        <h1>Candidates Page</h1>
+        <h1>Clients</h1>
       </section>
     </main>
   );
 };
 
-export default CandidatesPage;
+export default ClientsPage;
