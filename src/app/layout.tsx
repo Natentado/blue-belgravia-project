@@ -22,6 +22,7 @@ export default function RootLayout({
       <head>
         {/* <!-- Google Tag Manager --> */}
         <Script
+          id="gtm-script"
           strategy="afterInteractive" // Recommended for better performance
           dangerouslySetInnerHTML={{
             __html: `
