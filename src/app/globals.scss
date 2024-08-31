@@ -1,3 +1,25 @@
+//ROOT VARIABLES
+:root{
+  // Font Sizes
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125;
+
+  --heading-size-1: 1.875rem;
+  --heading-size-2: 1.5rem;
+  --heading-size-3: 1.313rem;
+  --heading-size-4: 1.125rem;
+
+  @media(max-width: 1024px){
+    --heading-size-1: 1.5rem;
+    --heading-size-2: 1.313rem;
+    --heading-size-3: 1.125rem;
+    --heading-size-4: 1rem;
+  }
+}
+
+// RESET AND NORMALIZER
 * {
   box-sizing: border-box;
   padding: 0;
@@ -8,6 +30,7 @@ body{
   position: relative;
   width: 100vw;
   width: 100dvw;
+  overflow-x: hidden;
 }
 
 footer{
@@ -20,6 +43,7 @@ footer{
   }
 
   @media (min-width: 1024px) {
+    padding: 24px 42px;
     font-size: 16px;
   }
 }
@@ -40,6 +64,68 @@ button {
   line-height: 1.4;
 }
 
+h2{
+  font-size: var(--heading-size-2);
+}
+
+h3{
+  font-size: var(--heading-size-3);
+}
+
+h4{
+  font-size: var(--heading-size-4);
+}
+
+button{
+  cursor: pointer;
+}
+
 ul, ol {
   list-style: none;
+};
+
+////////// UTILITY CLASSES
+
+.flex{
+  display: flex;
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.flex, .flex-column{
+  &.spacing-1x{
+    gap: 6px;
+  }
+
+  &.spacing-2x{
+    gap: 12px;
+  }
+
+  &.spacing-3x{
+    gap: 24px;
+  }
+
+  &.spacing-4x{
+    gap: 48px;
+  }
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+.align-center{
+  align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.centered{
+  justify-content: center;
+  align-items: center;
 }

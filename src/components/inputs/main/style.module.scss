@@ -1,0 +1,23 @@
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.8;
+
+    input{
+        height: 42px;
+        padding: 0 18px;
+        border: 1px solid #2A2A2F50;
+        border-radius: 6px;
+        transition: all 0.6s ease;
+
+        &:focus{
+            outline: none;
+            border: 1px solid #2A2A2F99;
+            box-shadow: 0 0 5pt 0.75pt #DDD;
+        }
+    }
+}

@@ -1,0 +1,114 @@
+.reviews{
+    padding: 36px 24px;
+    background-color: #2A2A2F;
+
+    > div:not(.contentWrapper){
+        h2{
+            color: #FFFFFF;
+            font-size: 21px;
+            font-weight: 600;
+        }
+
+        > span:first-child {
+            color: #FFFFFF99;
+            font-size: 14px;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        > span:last-child {
+            button{
+                width: 100%;
+                height: 42px;
+                padding: 6px 24px;
+                border: 2px solid transparent;
+                border-radius: 6px;
+                background-color: #EAEAEA;
+                color: #717171;
+                font-size: 16px;
+                font-weight: 600;
+
+                &.active{
+                    border: 2px solid #0F6499;
+                    background-color: #FFFFFF;
+                    color: #0F6499;
+                }
+            }
+        }
+    }
+
+    .contentWrapper{
+        align-items: center;
+
+        > span{
+            cursor: pointer;
+            height: 36px;
+            
+            svg path{
+                fill: #FFFFFF;
+            }
+        }
+
+        > div{
+            display: flex;
+            width: 100%;
+            height: 250px;
+            border-radius: 6px;
+            background-color: #FFFFFF;
+            overflow: hidden;
+
+            > div{
+                min-width: 100%;
+                padding: 18px 24px;
+                transition: transform 330ms ease-in-out;
+
+                > span{
+                    p:first-child{
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+
+                    p:last-child{
+                        font-size: 20px;
+                        font-weight: 600;
+
+                        svg path{
+                            fill: #ffcd3e;
+                        }
+                    }
+                }
+
+                > p{
+                    font-size: 14px;
+                    font-weight: 500;
+                    opacity: 0.75;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1024px) {
+        align-items: center;
+        padding: 48px 0;
+
+        .contentWrapper{
+            max-width: 500px;
+
+            > div{
+                height: 300px;
+
+                > div{
+                    padding: 36px;
+    
+                    > span p:first-child{
+                        font-size: 18px;
+                    }
+    
+                    > p{
+                        font-size: 16px;
+                    }
+                }
+            } 
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.purpose{
+    padding: 36px 24px;
+    border-bottom: 1px solid #E0E0E0;
+  
+    h2{
+        font-weight: 600;
+        text-align: center;
+        text-wrap: balance;
+    
+        b{
+            color: #0F6499;
+        }
+    }
+  
+    span p{
+        font-size: 16px;
+        font-weight: 500;
+        text-align: center;
+        opacity: 0.99;
+    
+        b{
+            color: #0F6499;
+            font-weight: 600;
+        }
+    
+        br{
+            display: none;
+        }
+    }
+  
+    @media (min-width: 1024px) {
+        padding: 48px 0;
+        gap: 36px;
+    
+        span{
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            max-width: 700px;
+            margin: 0 auto;
+            text-wrap: balance;
+    
+            p br{
+                display: unset;
+            }
+        } 
+    }
+}

@@ -1,0 +1,48 @@
+.ourHosting{
+  width: 100%;
+  padding: 36px 24px;
+  border-bottom: 1px solid #E0E0E0;
+  background-color: #0F649910;
+
+  ul {
+    justify-content: space-between;
+    gap: 36px;
+    max-width: 300px;
+    padding: 18px 0;
+
+    li{
+      flex-basis: calc(50% - 18px);
+      gap: 6px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+
+  > span{
+    p {
+      font-size: 16px;
+      text-align: center;
+      text-wrap: balance;
+
+      &:last-child b{
+        color: #0F6499;
+      }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    gap: 36px;
+    padding: 48px 0;
+
+    ul{
+      flex-wrap: unset;
+      max-width: unset;
+      padding: 18px;
+
+      li{
+        flex-basis: unset;
+        font-size: 16px;
+      }
+    }
+  }
+}

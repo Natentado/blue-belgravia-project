@@ -1,7 +1,9 @@
 import { Poppins } from "next/font/google";
 import Script from "next/script";
-import Header from "@/components/header";
+import dynamic from "next/dynamic";
 import "./globals.scss";
+
+const Header = dynamic(() => import("@/components/header"), {loading: () => <>...loading</>})
 
 const poppins = Poppins({ 
   subsets: ["latin"],
@@ -12,10 +14,11 @@ const poppins = Poppins({
 const TAGMANAGER_ID = process.env.TAGMANAGER_ID as string;
 
 export default function RootLayout({
-  children,
+  children
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="en">
       <head>
@@ -38,7 +41,7 @@ export default function RootLayout({
       <body className={poppins.className}>
         {/* <!-- Google Tag Manager (noscript) --> */}
           <noscript>
-            <iframe src={`https://www.googletagmanager.com/ns.html?id=${TAGMANAGER_ID}`} height="0" width="0" style={{display:"none",visibility:"hidden"}}></iframe>
+            <iframe src={`https://www.googletagmanager.com/ns.html?id=${TAGMANAGER_ID}`} height="0" width="0" style={{display:"none",visibility:"hidden"}} />
           </noscript>
         {/* <!-- End Google Tag Manager (noscript) --> */}
         <Header />

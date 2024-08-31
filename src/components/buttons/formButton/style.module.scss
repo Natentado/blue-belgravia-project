@@ -1,0 +1,17 @@
+.formButton{
+    height: 36px;
+    color: #0F6499;
+    background-color: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 60px;
+    font-size: 14px;
+    font-weight: 600;
+
+    @media (min-width: 1024px){
+        width: 175px;
+        height: 48px;
+        margin-top: 12px;
+        padding: 0 24px;
+        font-size: 16px;
+    }
+}
